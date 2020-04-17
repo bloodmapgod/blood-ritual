@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Blood Ritual</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch-jsonp/1.1.3/fetch-jsonp.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP-54ON_Uomm-0hL4bJsOYnAtbfLygjdo"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/orb.css">
+  <link rel="stylesheet" href="css/lootbox.css">
+  <link rel="stylesheet" href="css/rain.css">
+  <!-- <link rel="stylesheet" href="css/paint.css"> -->
+  <link rel="stylesheet" href="css/candle.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="dice300">Made by dice3000 <img src="img/ez_small.png" class="inline-image" alt=""></div>
+<div id="contribute">Contribute at github.com/bloodmap/ritual</div>
+
+<div id="bg-aurora" style="display: none;"></div>
+<div id="volume-container">
+  <input type="range" min="1" max="100" value="100" id="master-volume" title="Master Volume">
+</div>
+<div id="tos-compatible" class="collapsed"></div>
+<div id="rain-container">
+  <!-- x150 i.rain -->
+</div>
+
+<div id="ritual-container">
+  <canvas id="canvas" height="800" width="800"></canvas>
+  <div id="vue">
+    <canvas-proxy v-on:draw="setTrace" ref="proxy"></canvas-proxy>
+    <div id="canvas-shield" v-if="!isDrawMode"></div>
+
+    <sacrifice-circle v-if="isSacrificeMode" v-on:close="enterDraw"></sacrifice-circle>
+    <trivia-circle v-if="isTriviaMode" v-on:completed="closeTrivia"></trivia-circle>
+    <prayer-circle v-if="isPrayerMode" v-on:completed="enterDraw"></prayer-circle>
+
+    <div id="unknown-ticker" v-if="hasUnknownTicker" v-cloak>
+      {{ ticker }}? W H <img class="inline-image" src="img/omegalul_small.png" alt=""> ?
+    </div>
+    <stock-circle v-if="isStockMode" v-bind:ticker="ticker" v-bind:color="color" v-bind:chance="bloodLevel" v-on:continue="closeStockMode"></stock-circle>
+    <reward-circle v-if="isRewardMode" v-on:close="resetRitual"></reward-circle>
+    <journey-circle v-if="isJourneyMode" v-on:close="enterDraw"></journey-circle>
+
+    <div id="btn-reset" v-on:click="clickAlmond()" class="btn-round" title="Holy Almond Milk"></div>
+
+    <div id="btn-bear" v-on:click="setColor('red')" v-bind:class="{ active: 'red' === color }" class="btn-round" title="Bear Blood"></div>
+    <div id="btn-bull" v-on:click="setColor('green')" v-bind:class="{ active: 'green' === color }" class="btn-round" title="Bull Blood"></div>
+
+    <div id="btn-acb" v-on:click="chantAcb()" class="btn-round" v-bind:class="{ active: acbChantActive }" title="Aurorus Chant"></div>
+    <div id="btn-random-chant" v-on:click="chantRandom()" class="btn-round" v-bind:class="{ active: randomChantActive }" title="Random Chant"></div>
+
+    <div id="btn-sacrifice" v-on:click="enterTribute('sacrifice')" class="btn-round"  v-bind:class="{ active: isTribute('sacrifice') }" title="Tribute of Sacrifice"></div>
+    <div id="btn-prayer" v-on:click="enterTribute('prayer')" class="btn-round" v-bind:class="{ active: isTribute('prayer') }" title="Tribute of Prayer"></div>
+    <div id="btn-trivia" v-on:click="enterTribute('trivia')" class="btn-round" v-bind:class="{ active: isTribute('trivia') }" title="Tribute of Wisdom"></div>
+    <div id="btn-journey" v-on:click="enterTribute('journey')" class="btn-round" v-bind:class="{ active: isTribute('journey') }" title="Tribute of Journey"></div>
+
+    <div id="blood-orb" class="btn-round" v-bind:title="bloodOrbTitle" v-bind:class="{ active: bloodLevel > 0 }">
+      <div class="orb-green">
+        <div class="orb-inner">
+          <div class="orb-water" v-bind:style="{ top: (100 - bloodLevel) + '%' }"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="btn-candle" v-on:click="submitRitual()" v-bind:class="{ active: candleLit }" class="btn-round" title="Commune With God">
+      <div class="candle" v-bind:class="{ lit: candleLit }">
+        <div class="flame">
+          <div class="shadows"></div>
+          <div class="top"></div>
+          <div class="middle"></div>
+          <div class="bottom"></div>
+        </div>
+        <div class="wick"></div>
+        <div class="wax"></div>
+      </div>
+    </div>
+
+    <guardian style="left: -430px;" direction="left"></guardian>
+    <guardian style="left: 950px;" direction="right"></guardian>
+
+  </div> <!-- #vue -->
+</div> <!-- #ritual-container --->
+
+<!--
+<div id="ui" style="display: none;">
+  <div id="clear-button" class="button">Clear</div>
+  <div class="control-label">Quality</div>
+  <div class="buttons" id="qualities"></div>
+  <div style="clear:both"></div>
+  <div class="control-label">Color Mode</div>
+  <div class="buttons" id="models"></div>
+  <div style="clear:both"></div>
+  <div class="control-label">Paint Fluidity</div>
+  <div id="fluidity-slider" class="slider"></div>
+  <div class="control-label">Bristle Count</div>
+  <div id="bristles-slider" class="slider"></div>
+  <div class="control-label">Brush Size</div>
+  <div id="size-slider" class="slider"></div>
+</div>
+-->
+
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+
+<script src="paint/wrappedgl.js"></script>
+<script src="paint/utilities.js"></script>
+<script src="paint/rectangle.js"></script>
+<script src="paint/brush.js"></script>
+<script src="paint/simulator.js"></script>
+<!-- <script src="paint/slider.js"></script> -->
+<!-- <script src="paint/buttons.js"></script> -->
+<script src="paint/paint.js"></script>
+
+<script src="js/utils.js"></script>
+<script src="js/misc-dom.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/content/cities.js"></script>
+<script src="js/content/tickers.js"></script>
+<script src="js/content/prayers.js"></script>
+<script src="js/content/rewards.js"></script>
+<script src="js/content/reactions.js"></script>
+
+<script src="js/vue/youtube.js"></script>
+<script src="js/vue/canvas-proxy.js"></script>
+<script src="js/vue/guardian.js"></script>
+<script src="js/vue/prayer-circle.js"></script>
+<script src="js/vue/reward-circle.js"></script>
+<script src="js/vue/sacrifice-circle.js"></script>
+<script src="js/vue/stock-circle.js"></script>
+<script src="js/vue/trivia-circle.js"></script>
+<script src="js/vue/journey-circle.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+#reward-circle {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+#reward-circle .lootbox {
+    width: 200px;
+    height: 200px;
+    display: -webkit-box;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+#reward-circle .lootbox:hover {
+    box-shadow: 0 20px 50px 10px rgba(0, 0, 0, 0.5);
+    -webkit-animation: shake-box 1s cubic-bezier(0.3, 0.06, 0.2, 0.9) infinite;
+    animation: shake-box 1s cubic-bezier(0.3, 0.06, 0.2, 0.9) infinite;
+}
+#reward-circle .lootbox .lootbox-upper {
+    width: 100%;
+    -webkit-box-flex: 1;
+    flex: 1;
+    background-color: #dcdcdc;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom: 10px solid #585757;
+}
+#reward-circle .lootbox .lootbox-lower {
+    width: 100%;
+    -webkit-box-flex: 1;
+    flex: 1;
+    background-color: orange;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+#reward-circle .lootbox .lootbox-latch {
+    position: absolute;
+    width: 10%;
+    height: 15%;
+    background-color: #585757;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -10%);
+    transform: translate(-50%, -10%);
+}
+
+@-webkit-keyframes shake-box {
+    10%,
+    90% {
+        -webkit-transform: translate3d(-1px, -1px, 0) rotate(5deg);
+        transform: translate3d(-1px, -1px, 0) rotate(5deg);
+    }
+    20%,
+    80% {
+        -webkit-transform: translate3d(2px, -4px, 0) rotate(-2deg);
+        transform: translate3d(2px, -4px, 0) rotate(-2deg);
+    }
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translate3d(-4px, -1px, 0) rotate(3deg);
+        transform: translate3d(-4px, -1px, 0) rotate(3deg);
+    }
+    40%,
+    60% {
+        -webkit-transform: translate3d(4px, 2px, 0) rotate(-4deg);
+        transform: translate3d(4px, 2px, 0) rotate(-4deg);
+    }
+}
+
+@keyframes shake-box {
+    10%,
+    90% {
+        -webkit-transform: translate3d(-1px, -1px, 0) rotate(5deg);
+        transform: translate3d(-1px, -1px, 0) rotate(5deg);
+    }
+    20%,
+    80% {
+        -webkit-transform: translate3d(2px, -4px, 0) rotate(-2deg);
+        transform: translate3d(2px, -4px, 0) rotate(-2deg);
+    }
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translate3d(-4px, -1px, 0) rotate(3deg);
+        transform: translate3d(-4px, -1px, 0) rotate(3deg);
+    }
+    40%,
+    60% {
+        -webkit-transform: translate3d(4px, 2px, 0) rotate(-4deg);
+        transform: translate3d(4px, 2px, 0) rotate(-4deg);
+    }
+}
