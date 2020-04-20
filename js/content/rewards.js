@@ -71,6 +71,11 @@ let rewards = [
     ],
   },
   {
+    // dos horas
+    weight: 1,
+    youtube: 'https://www.youtube.com/watch?v=fRs99-1a8sI&autoplay=1&t=2812'
+  },
+  {
     // song request
     weight: 1,
     image: 'img/pepe_jam.gif',
