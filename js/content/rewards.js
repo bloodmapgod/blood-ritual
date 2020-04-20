@@ -35,6 +35,14 @@ let rewards = [
     ],
   },
   {
+    // uu rr marbles
+    weight: 1,
+    image: 'img/monkahmm_250.png',
+    audio: [
+      'audio/uurr_marbles.mp3',
+    ],
+  },
+  {
     // audio insult
     weight: 1,
     image: 'img/monkahmm_250.png',
