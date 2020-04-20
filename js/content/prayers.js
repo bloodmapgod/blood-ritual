@@ -8,8 +8,8 @@
 //  - completed.audio: audio to play on success
 //  - background.audio: audio to play each time recording is started (this has not been tested)
 //
-let prayers = {
-  0: {
+let prayers = [
+  {
     lang: 'en-US',
     lines: [
       'This is a cult',
@@ -21,7 +21,7 @@ let prayers = {
       image: 'img/bless_rng.png',
     }
   },
-  1: {
+  {
     lang: 'en-US',
     lines: [
       'I never told you this but',
@@ -31,7 +31,7 @@ let prayers = {
       image: 'img/kappa.png',
     }
   },
-  2: {
+  {
     lang: 'es-MX',
     lines: [
       'Dale a tu cuerpo alegria Macarena',
@@ -44,7 +44,7 @@ let prayers = {
       audio: 'audio/content/macarena.mp3'
     }
   },
-  3: {
+  {
     lang: 'en-US',
     valid: function () {
       return 5 === (new Date()).getDay();
@@ -61,7 +61,7 @@ let prayers = {
       audio: 'audio/content/its_friday.mp3'
     }
   },
-  4: {
+  {
     weight: 2,
     lang: 'en-US',
     lines: [
@@ -75,7 +75,7 @@ let prayers = {
       audio: 'audio/content/timber.mp3'
     }
   },
-  5: {
+  {
     weight: 1,
     lang: 'en-US',
     lines: [
@@ -89,7 +89,7 @@ let prayers = {
       audio: 'audio/content/back_that_ass.mp3'
     }
   },
-  6: {
+  {
     weight: 1,
     lang: 'en-US',
     lines: [
@@ -105,7 +105,7 @@ let prayers = {
       audio: 'audio/content/rick_roll_outro.mp3'
     }
   },
-  7: {
+  {
     weight: 1,
     lang: 'en-US',
     lines: [
@@ -115,8 +115,51 @@ let prayers = {
       image: 'img/kekw_anim.gif',
     }
   },
-};
-// hoes mad
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'The bigger they are, the harder they fall',
+      'This biggity boy\'s a diggity dog',
+      'I have them like Miley Cyrus, clothes off',
+      'Twerking in their bras and thongs, timber',
+    ],
+    completed: {
+      image: 'img/pepe_d.gif',
+      audio: 'audio/content/timber.mp3'
+    }
+  },
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'Face down, booty up, timber',
+      'That\'s the way we like the what, timber',
+      'I\'m slicker than an oil spill',
+      'She say she won\'t, but I bet she will, timber'
+    ],
+    completed: {
+      image: 'img/pepe_d.gif',
+      audio: 'audio/content/timber.mp3'
+    }
+  },
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'Swing your partner round and round',
+      'End of the night, it\'s going down',
+      'One more shot, another round',
+      'End of the night, it\'s going down',
+    ],
+    completed: {
+      image: 'img/pepe_d.gif',
+      audio: 'audio/content/timber.mp3'
+    }
+  }
+];
+
+let prayerNum = null;
 
 // @TODO Cookie
 function randomPrayer() {
@@ -128,5 +171,5 @@ function randomPrayer() {
     }
   });
 
-  return prayers[_.sample(indices)];
+  return prayers[null === prayerNum ? _.sample(indices) : prayerNum];
 }
