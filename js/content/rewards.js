@@ -88,6 +88,12 @@ let rewards = [
     youtube: 'https://www.youtube.com/watch?v=fRs99-1a8sI&autoplay=1&t=2812'
   },
   {
+    // hydra_riddle
+    weight: 1,
+    image: 'img/hydra_riddle.png',
+    text: 'monkaHmm',
+  },
+  {
     // song request
     weight: 1,
     image: 'img/pepe_jam.gif',
@@ -127,6 +133,8 @@ let rewards = [
   },
 ];
 
+let rewardNum = null;
+
 function randomReward() {
   let indices = [];
   _.each(rewards,  (reward, idx) => {
@@ -134,7 +142,7 @@ function randomReward() {
     indices = indices.concat(Array(weight).fill(idx))
   });
 
-  let reward = rewards[_.sample(indices)];
+  let reward = rewards[rewardNum === null ? _.sample(indices) : rewardNum];
   _.each(reward, (val, key) => {
     if (_.isArray(val)) {
       reward[key] = _.sample(val);
