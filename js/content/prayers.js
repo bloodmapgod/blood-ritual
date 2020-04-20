@@ -184,6 +184,20 @@ let prayers = [
     completed: {
       image: 'img/bless_rng.png',
     }
+  },
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'This is just my opinion',
+      'But I think ACB is a great stock',
+      'I have been buying in since March',
+      'Weed is the future guys'
+    ],
+    completed: {
+      image: 'img/kekw_anim.gif',
+      audio: 'audio/all_in_acb.mp3'
+    }
   }
 ];
 
