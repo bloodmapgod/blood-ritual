@@ -173,6 +173,17 @@ let prayers = [
       image: 'img/pepe_d.gif',
       audio: 'audio/lazytown.mp3'
     }
+  },
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'Ask not what ACB can do for you',
+      'Ask what you can do for ACB',
+    ],
+    completed: {
+      image: 'img/bless_rng.png',
+    }
   }
 ];
 
