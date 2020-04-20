@@ -41,7 +41,7 @@ let prayers = [
     ],
     completed: {
       image: 'img/pepe_jam.gif',
-      audio: 'audio/content/macarena.mp3'
+      audio: 'audio/macarena.mp3'
     }
   },
   {
@@ -58,7 +58,7 @@ let prayers = [
     ],
     completed: {
       image: 'img/rebecca_black.png',
-      audio: 'audio/content/its_friday.mp3'
+      audio: 'audio/its_friday.mp3'
     }
   },
   {
@@ -72,7 +72,7 @@ let prayers = [
     ],
     completed: {
       image: 'img/pepe_d.gif',
-      audio: 'audio/content/timber.mp3'
+      audio: 'audio/timber.mp3'
     }
   },
   {
@@ -86,7 +86,7 @@ let prayers = [
     ],
     completed: {
       image: 'img/pepe_d.gif',
-      audio: 'audio/content/back_that_ass.mp3'
+      audio: 'audio/back_that_ass.mp3'
     }
   },
   {
@@ -102,7 +102,7 @@ let prayers = [
     ],
     completed: {
       image: 'img/pepe_d.gif',
-      audio: 'audio/content/rick_roll_outro.mp3'
+      audio: 'audio/rick_roll_outro.mp3'
     }
   },
   {
@@ -126,7 +126,7 @@ let prayers = [
     ],
     completed: {
       image: 'img/pepe_d.gif',
-      audio: 'audio/content/timber.mp3'
+      audio: 'audio/timber.mp3'
     }
   },
   {
@@ -140,7 +140,7 @@ let prayers = [
     ],
     completed: {
       image: 'img/pepe_d.gif',
-      audio: 'audio/content/timber.mp3'
+      audio: 'audio/timber.mp3'
     }
   },
   {
@@ -154,7 +154,7 @@ let prayers = [
     ],
     completed: {
       image: 'img/pepe_d.gif',
-      audio: 'audio/content/timber.mp3'
+      audio: 'audio/timber.mp3'
     }
   },
   {
@@ -171,7 +171,7 @@ let prayers = [
     ],
     completed: {
       image: 'img/pepe_d.gif',
-      audio: 'audio/content/lazytown.mp3'
+      audio: 'audio/lazytown.mp3'
     }
   }
 ];
