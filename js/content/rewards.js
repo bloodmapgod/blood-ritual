@@ -58,6 +58,10 @@ let rewards = [
     text: 'A sacrifice is required.',
   },
   {
+    weight: 1,
+    text: 'A dab is required from Stonky.',
+  },
+  {
     // annoying songs
     weight: 1,
     image: 'img/pepe_d.gif',
