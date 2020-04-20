@@ -198,6 +198,20 @@ let prayers = [
       image: 'img/kekw_anim.gif',
       audio: 'audio/all_in_acb.mp3'
     }
+  },
+  {
+    weight: 1,
+    lang: 'ru-RU',
+    lines: [
+      'Наркотик не класс',
+      'Я еду на Хард бас',
+      'Если ты не знал',
+      'Наркотик кал',
+    ],
+    completed: {
+      image: 'img/pepe_gopnik.png',
+      audio: 'audio/acb_hardbass.mp3'
+    }
   }
 ];
 
