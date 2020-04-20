@@ -156,6 +156,23 @@ let prayers = [
       image: 'img/pepe_d.gif',
       audio: 'audio/content/timber.mp3'
     }
+  },
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'It\'s a piece of cake to bake a pretty cake',
+      'If the way is hazy',
+      'You gotta do the cooking by the book',
+      'You know you can\'t be lazy!',
+      'Never use a messy recipe',
+      'The cake will end up crazy',
+      'If you do the cooking by the book, then you\'ll have a cake',
+    ],
+    completed: {
+      image: 'img/pepe_d.gif',
+      audio: 'audio/content/lazytown.mp3'
+    }
   }
 ];
 
