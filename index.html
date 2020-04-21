@@ -28,6 +28,11 @@
 </head>
 
 <body>
+<script>
+  if (null === annyang) {
+    document.body.parentElement.innerHTML = `<html><body><div>Your browser does not support <a href="https://caniuse.com/#feat=speech-recognition">Speech Recognition API</a>.</div></body></html>`;
+  }
+</script>
 
 <div id="dice300">Made by dice3000 <img src="img/ez_small.png" class="inline-image" alt=""></div>
 <div id="contribute">Contribute @ github.com/bloodmapgod</div>
