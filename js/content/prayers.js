@@ -37,7 +37,7 @@ let prayers = [
       'Dale a tu cuerpo alegria Macarena',
       'Que tu cuerpo es pa\' darle alegria y cosa buena',
       'Dale a tu cuerpo alegria, Macarena',
-      'Hey Macarena'
+      'Hoy Macarena',  // Hey is english
     ],
     completed: {
       image: 'img/pepe_jam.gif',
