@@ -19,7 +19,8 @@ body {
     margin: 0;
     padding: 0;
 
-    background-image: url("../img/background.png");
+    background-image: url("../img/background.jpg");
+    background-size: cover;
     background-position: center top;
 }
 
