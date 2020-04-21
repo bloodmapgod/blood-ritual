@@ -397,7 +397,7 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-    background: #000;
+    background: #101010;
     padding: 10px 20px;
     z-index: 1;
 }
@@ -651,6 +651,7 @@ body {
     padding: 3px;
     border: 3px #303030 solid;
     border-top: none;
+    user-select: text;
 }
 #dice300 {
     top: 28px;
