@@ -68,6 +68,7 @@ let rewards = [
   {
     weight: 1,
     text: 'A dab is required from Stonky.',
+    image: 'img/dab.png',
   },
   {
     // annoying songs
