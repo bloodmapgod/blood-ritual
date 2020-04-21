@@ -310,7 +310,7 @@ function getRandomPanorama(callback, attempt = 0) {
     source: google.maps.StreetViewSource.OUTDOOR
   };
 
-  sv.getPanoramaByLocation(panoRequest, (data, status) => {
+  sv.getPanorama(panoRequest, (data, status) => {
     console.log('getPanoramaByLocation', data, status);
     if (status === 'OK') {
       callback(data.location.latLng, pop);
