@@ -84,6 +84,11 @@ let rewards = [
     ],
   },
   {
+    // stock got that
+    weight: 1,
+    youtube: 'https://www.youtube.com/watch?v=JmLHjOzwVbw&autoplay=1'
+  },
+  {
     // dos horas
     weight: 1,
     youtube: 'https://www.youtube.com/watch?v=fRs99-1a8sI&autoplay=1&t=2812'
