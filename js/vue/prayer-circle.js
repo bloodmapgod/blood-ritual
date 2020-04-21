@@ -73,7 +73,7 @@ Vue.component('prayer-circle', {
       return line
         .toLowerCase()
         .replace(/\s\s+/g, ' ')
-        .replace(/[?.,'’¿¡]/g, '')
+        .replace(/[?.,'’¿¡!]/g, '')
         .replace(/á/g, 'a')
         .replace(/é/g, 'e')
         .replace(/í/g, 'i')
