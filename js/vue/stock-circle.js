@@ -48,7 +48,7 @@ Vue.component('stock-circle', {
   template: `
     <div id="vision-circle">
       <div v-if="fetching " class="flex-center w100 h100">
-        <img src="img/red_loader.gif" alt="">
+        <img src="img/loader_2.gif" alt="">
       </div>
       <div v-else id="stock-vision">
         <div class="stock-name">{{ name }}</div>

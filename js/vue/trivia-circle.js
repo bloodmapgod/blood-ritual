@@ -64,7 +64,7 @@ Vue.component('trivia-circle', {
         <button v-if="answered" class="btn-continue" v-on:click="next">Continue</button>
       </div>
       <div v-else class="flex-center w100 h100">
-        <img src="img/red_loader.gif" alt="">
+        <img src="img/loader_2.gif" alt="">
       </div>
     </div>
   `,
