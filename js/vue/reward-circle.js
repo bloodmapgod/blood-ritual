@@ -59,6 +59,7 @@ Vue.component('reward-circle', {
       <div class="flex-center h100 w100" v-if="!reward">
         <div class="rel">
           <div class="lootbox" v-bind:class="{'slide-in-top': !landed, 'opening': opening, 'landed': landed }" v-on:click="openLootbox" title="ACB Drop">
+            <div class="chute" v-if="!landed"></div>
             <div class="lootbox-upper"></div>
             <div class="lootbox-lower"></div>
             <div class="lootbox-latch"></div>

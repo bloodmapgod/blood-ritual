@@ -1,3 +1,13 @@
+.chute {
+    background-image: url("../img/chute.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 100%;
+}
+
 #reward-circle {
     display: -webkit-box;
     display: flex;
