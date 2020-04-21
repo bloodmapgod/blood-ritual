@@ -28,7 +28,7 @@ let rewards = [
   },
   {
     // you suck
-    weight: 1,
+    weight: 2,
     image: 'img/monkahmm_250.png',
     audio: [
       'audio/you_suck_stocky.mp3',
