@@ -19,7 +19,38 @@
     border-radius: 10%;
 }
 
-#reward-circle .lootbox:hover {
+.slide-in-top {
+    -webkit-animation: slide-in-top 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-top 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-iteration-count: 1
+}
+
+@-webkit-keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#reward-circle .lootbox.landed:hover {
     box-shadow: 0 20px 50px 10px rgba(0, 0, 0, 0.5);
     -webkit-animation: shake-box 1s cubic-bezier(0.3, 0.06, 0.2, 0.9) infinite;
     animation: shake-box 1s cubic-bezier(0.3, 0.06, 0.2, 0.9) infinite;
@@ -32,6 +63,9 @@
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
     border-bottom: 10px solid #585757;
+    background-image: url(../img/acb_letters.png);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 #reward-circle .lootbox .lootbox-lower {
     width: 100%;

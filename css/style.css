@@ -530,6 +530,15 @@ body {
     background-color: white;
 }
 
+#reward-circle {
+    overflow: hidden;
+}
+#reward-circle.bg-target {
+    background-image: url(../img/chute_target.png);
+    background-repeat: no-repeat;
+    background-position: center 65%;
+}
+
 #journey-circle {
     padding: 0;
 }

@@ -5,6 +5,7 @@ Vue.component('reward-circle', {
     return {
       opening: false,
       reward: null,
+      landed: false
     };
   },
   computed: {
@@ -14,6 +15,11 @@ Vue.component('reward-circle', {
   },
   created: function () {
     audioHelper.addListener('masterVolumeChange', this.setVolume);
+  },
+  mounted: function () {
+    setTimeout(() => {
+      this.landed = true;
+    }, 750);
   },
   beforeDestroy: function () {
     audioHelper.speakStop();
@@ -48,11 +54,11 @@ Vue.component('reward-circle', {
     }
   },
   template: `
-    <div id="reward-circle">
+    <div id="reward-circle" v-bind:class="{ 'bg-target': !reward }">
 
       <div class="flex-center h100 w100" v-if="!reward">
         <div class="rel">
-          <div class="lootbox" v-bind:class="{ opening: opening }" v-on:click="openLootbox" title="ACB Drop">
+          <div class="lootbox" v-bind:class="{'slide-in-top': !landed, 'opening': opening, 'landed': landed }" v-on:click="openLootbox" title="ACB Drop">
             <div class="lootbox-upper"></div>
             <div class="lootbox-lower"></div>
             <div class="lootbox-latch"></div>
