@@ -92,7 +92,7 @@ let rewards = [
     // hydra_riddle
     weight: 1,
     image: 'img/hydra_riddle.png',
-    text: 'monkaHmm',
+    text: 'Chat do you see it?',
   },
   {
     // song request
