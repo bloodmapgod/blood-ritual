@@ -302,7 +302,15 @@ function getRandomPanorama(callback, attempt = 0) {
 
   let randPoint = new google.maps.LatLng(lat, lng);
 
-  sv.getPanoramaByLocation(randPoint, 5000, (data, status) => {
+  // https://developers.google.com/maps/documentation/javascript/reference/3/#street-view
+  let panoRequest = {
+    location: randPoint,
+    preference: google.maps.StreetViewPreference.BEST,
+    radius: 5000,
+    source: google.maps.StreetViewSource.OUTDOOR
+  };
+
+  sv.getPanoramaByLocation(panoRequest, (data, status) => {
     console.log('getPanoramaByLocation', data, status);
     if (status === 'OK') {
       callback(data.location.latLng, pop);
