@@ -242,6 +242,19 @@ let prayers = [
     completed: {
       youtube: 'https://www.youtube.com/watch?v=TzaVd6zl2bA&t=57&autoplay=1',
     }
+  },
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'Ocean man, take me by the hand, lead me to the land that you understand',
+      'Ocean man, the voyage to the corner of the globe is a real trip',
+      'Ocean man, the crust of a tan man imbibed by the sand | Ocean man, the crust of a 10-man imbibed by the sand',
+      'Soaking up the thirst of the land',
+    ],
+    completed: {
+      youtube: 'https://www.youtube.com/watch?v=tkzY_VwNIek&autoplay=1',
+    }
   }
 ];
 
