@@ -212,6 +212,19 @@ let prayers = [
       image: 'img/pepe_gopnik.png',
       audio: 'audio/acb_hardbass.mp3'
     }
+  },
+  {
+    lang: 'es-MX',
+    lines: [
+      'Despacito',
+      'Quiero respirar tu cuello despacito',
+      'Deja que te diga cosas al oído',
+      'Para que te acuerdes si no estás conmigo',
+    ],
+    completed: {
+      image: 'img/pepe_jam.gif',
+      audio: 'audio/despacito.mp3'
+    }
   }
 ];
 
