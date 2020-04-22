@@ -5,7 +5,8 @@ Vue.component('reward-circle', {
     return {
       opening: false,
       reward: null,
-      landed: false
+      landed: false,
+      slow: false
     };
   },
   computed: {
@@ -17,11 +18,21 @@ Vue.component('reward-circle', {
     audioHelper.addListener('masterVolumeChange', this.setVolume);
   },
   mounted: function () {
-    setTimeout(() => {
-      this.landed = true;
-    }, 750);
+    if (Math.random() <= 0.05) {
+      // @see lootbox.css
+      audioHelper.play('audio/slow_motion.mp3');
+      this.slow = true;
+      setTimeout(() => {
+        this.landed = true;
+      }, 60 * 1000);
+    } else {
+      setTimeout(() => {
+        this.landed = true;
+      }, 750);
+    }
   },
   beforeDestroy: function () {
+    audioHelper.stop('audio/slow_motion.mp3');
     audioHelper.speakStop();
     audioHelper.removeListener('masterVolumeChange', this.setVolume);
     audioHelper.stop('audio/lootbox_open.mp3');
@@ -35,9 +46,10 @@ Vue.component('reward-circle', {
       // @TODO Speech
     },
     openLootbox: function () {
-      if (this.opening) {
+      if (!this.landed || this.opening) {
         return;
       }
+      audioHelper.stop('audio/slow_motion.mp3');
       this.opening = true;
       audioHelper.play('audio/lootbox_open.mp3'); // length = 3900
       setTimeout(() => {
@@ -58,7 +70,7 @@ Vue.component('reward-circle', {
 
       <div class="flex-center h100 w100" v-if="!reward">
         <div class="rel">
-          <div class="lootbox" v-bind:class="{'slide-in-top': !landed, 'opening': opening, 'landed': landed }" v-on:click="openLootbox" title="ACB Drop">
+          <div class="lootbox" v-bind:class="{'slide-in-top': !landed, 'opening': opening, 'landed': landed, 'slow': slow }" v-on:click="openLootbox" title="ACB Drop">
             <div class="chute" v-if="!landed"></div>
             <div class="lootbox-upper"></div>
             <div class="lootbox-lower"></div>
