@@ -17,3 +17,9 @@ Content Files:
 - [Prayer Challenges](https://github.com/bloodmapgod/blood-ritual/blob/gh-pages/js/content/prayers.js)
 - [Stock Price Reactions](https://github.com/bloodmapgod/blood-ritual/blob/gh-pages/js/content/reactions.js)
 - [Ritual Rewards](https://github.com/bloodmapgod/blood-ritual/blob/gh-pages/js/content/rewards.js)
+
+## Content Generators
+
+- [Text to Speech](https://textreader.pro/) (UU RR voice)
+- [Voice Changer](https://voicechanger.io/) (use satan for blood map god)
+- [GIFs](https://gfycat.com/)
