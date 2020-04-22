@@ -66,6 +66,12 @@ let rewards = [
     text: 'A sacrifice is required.',
   },
   {
+    // god: under sacrifice quota
+    weight: 1,
+    image: 'img/monkas_250.png',
+    audio: 'audio/god_quota.wav'
+  },
+  {
     weight: 1,
     text: 'A dab is required from Stonky.',
     image: 'img/dab.png',
