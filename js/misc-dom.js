@@ -32,3 +32,18 @@
     }
   }, 120 * 1000); // 2m
 })();
+
+function setTendiesRain() {
+  document.getElementById('rain-container').classList.add('tendies');
+  document.querySelectorAll('.rain').forEach(el => {
+    let deg = Math.ceil(Math.random() * 360);
+    el.style.transform = 'rotate(' + deg +'deg)';
+  });
+}
+
+function resetRain() {
+  document.getElementById('rain-container').classList.remove('tendies');
+  document.querySelectorAll('.rain').forEach(el => {
+    el.style.transform = null;
+  });
+}

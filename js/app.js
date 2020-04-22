@@ -92,6 +92,8 @@ let app = new Vue({
       this.resetRitual();
     },
     resetRitual: function() {
+      resetRain();
+
       this.$refs.proxy.reset();
 
       this.mode = 'start';
@@ -186,6 +188,9 @@ let app = new Vue({
       audioHelper.tracks.ritualBg.stop();
       if (success) {
         this.mode = 'reward';
+        if (Math.random() < 0.06) {
+          setTendiesRain();
+        }
       } else {
         this.resetRitual();
       }
