@@ -10,6 +10,7 @@ Vue.component('prayer-circle', {
       lastUnmatchedText: null,
       completedAudio: null,
       completedImage: null,
+      completedYoutube: null,
       backgroundAudio: null,
     };
   },
@@ -54,9 +55,14 @@ Vue.component('prayer-circle', {
       this.completedAudio = _.get(prayer, 'completed.audio', null);
       this.completedImage = _.get(prayer, 'completed.image', null);
       this.backgroundAudio = _.get(prayer, 'background.audio', null);
+      this.completedYoutube = _.get(prayer, 'completed.youtube', null);
 
       annyang.setLanguage(prayer.lang);
-      this.expectedLines = prayer.lines.map(line => ({ text: line, matched: false }));
+      this.expectedLines = prayer.lines.map(line => ({
+        displayText: line.split('|')[0].trim(),
+        matchVariations: line.split('|'),
+        matched: false
+      }));
     },
     toggleListening: function () {
       this.listening = !this.listening;
@@ -72,8 +78,9 @@ Vue.component('prayer-circle', {
     normalize: function(line) {
       return line
         .toLowerCase()
+        .trim()
         .replace(/\s\s+/g, ' ')
-        .replace(/[?.,'’¿¡!]/g, '')
+        .replace(/[?.,'’¿¡!)(]/g, '') // @TODO keep a-z0-9 only
         .replace(/á/g, 'a')
         .replace(/é/g, 'e')
         .replace(/í/g, 'i')
@@ -88,9 +95,15 @@ Vue.component('prayer-circle', {
       let matchedSomething = false;
       this.expectedLines.forEach((expectedLine, idx) => {
         spokenTexts.forEach(spokenText => {
-          if (!expectedLine.matched && this.normalize(spokenText).includes(this.normalize(expectedLine.text))) {
-            this.$set(this.expectedLines[idx], 'matched', true);
-            matchedSomething = true;
+          let normSpokenText = this.normalize(spokenText);
+          if (!expectedLine.matched) {
+            _.each(expectedLine.matchVariations, matchVariation => {
+              if (normSpokenText.includes(this.normalize(matchVariation))) {
+                this.$set(this.expectedLines[idx], 'matched', true);
+                matchedSomething = true;
+                return false; // break
+              }
+            });
           }
         });
       });
@@ -111,7 +124,7 @@ Vue.component('prayer-circle', {
       
       <table id="prayer-expected-lines">
         <tr v-for="expectedLine in expectedLines">
-          <td class="prayer-line" v-bind:class="{ matched: expectedLine.matched }">{{ expectedLine.text }}</td>
+          <td class="prayer-line" v-bind:class="{ matched: expectedLine.matched }">{{ expectedLine.displayText }}</td>
         </tr>
       </table>
 
@@ -128,6 +141,7 @@ Vue.component('prayer-circle', {
         <img v-bind:src="completedImage" alt="">
       </div>
 
+      <youtube v-if="isFullyMatched && completedYoutube" v-bind:url="completedYoutube" height="200" width="400"></youtube>
     </div>
   `
 });

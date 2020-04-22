@@ -8,6 +8,8 @@
 //  - completed.audio: audio to play on success
 //  - background.audio: audio to play each time recording is started (this has not been tested)
 //
+// Use pipe symbol "|" to provider alternative texts for recognition. E.g. see day man prayer.
+//
 let prayers = [
   {
     lang: 'en-US',
@@ -224,6 +226,21 @@ let prayers = [
     completed: {
       image: 'img/pepe_jam.gif',
       audio: 'audio/despacito.mp3'
+    }
+  },
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'Dayman (ah-ah-ah) | day man | damon',
+      'Fighter of the Nightman (ah-ah-ah) | fighter of the night man | fighter of the nightman',
+      'Champion of the Sun (ah-ah-ah) | champion of the sun',
+      'You\'re a Master of Karate',
+      'And Friendship',
+      'For Everyone!',
+    ],
+    completed: {
+      youtube: 'https://www.youtube.com/watch?v=TzaVd6zl2bA&t=57&autoplay=1',
     }
   }
 ];
