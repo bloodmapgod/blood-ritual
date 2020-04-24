@@ -523,7 +523,7 @@ body {
     left: 0;
     width: 800px;
     height: 800px;
-    border-radius: 800px;
+    border-radius: 50%;
     padding: 120px;
     box-sizing: border-box;
     text-align: center;
@@ -571,8 +571,10 @@ body {
 
 #submit-market-control {
     text-align: center;
-    margin-left: -45px;
-    width: 90px;
+    width: 100px;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 auto 150px !important;
 }
 
 #show-panorama-control {
@@ -670,4 +672,16 @@ body {
 #contribute {
     top: 0;
     left: 0;
+}
+
+#street-view .gmnoprint:nth-of-type(4) {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    bottom: 125px !important;
+}
+
+#map-view .gmnoprint:nth-of-type(4) {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    bottom: 125px !important;
 }
