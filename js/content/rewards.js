@@ -15,7 +15,7 @@ let rewards = [
     // marbles
     weight: 1,
     image: 'img/hypers_250.png',
-    text: 'A marbles game is required.',
+    text: '!play',
   },
   {
     // speech insult
@@ -63,7 +63,7 @@ let rewards = [
     // request a sacrifice
     weight: 1,
     image: 'img/monkas_250.png',
-    text: 'A sacrifice is required.',
+    text: 'A random viewer must be sacrificed',
   },
   {
     // god: under sacrifice quota
@@ -73,7 +73,7 @@ let rewards = [
   },
   {
     weight: 1,
-    text: 'A dab is required from Stonky.',
+    text: 'Stocky must do a dab',
     image: 'img/dab.png',
   },
   {
