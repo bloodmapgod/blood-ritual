@@ -105,3 +105,11 @@ let getDistance = function (p1, p2) {
   let d = R * c;
   return d; // returns the distance in meter
 };
+
+function getWinCount() {
+  return parseInt(Cookies.get('winCount')) || 0;
+}
+
+function incrWinCount() {
+  Cookies.set('winCount', getWinCount() + 1);
+}

@@ -188,7 +188,7 @@ let app = new Vue({
       audioHelper.tracks.ritualBg.stop();
       if (success) {
         this.mode = 'reward';
-        if (Math.random() < 0.06) {
+        if (getWinCount() > 1 && Math.random() < 0.06) {
           setTendiesRain();
         }
       } else {

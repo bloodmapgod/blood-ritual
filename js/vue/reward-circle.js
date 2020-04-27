@@ -18,7 +18,7 @@ Vue.component('reward-circle', {
     audioHelper.addListener('masterVolumeChange', this.setVolume);
   },
   mounted: function () {
-    if (Math.random() <= 0.05) {
+    if (getWinCount() > 1 && Math.random() <= 0.05) {
       // @see lootbox.css
       audioHelper.play('audio/slow_motion.mp3');
       this.slow = true;
@@ -49,6 +49,7 @@ Vue.component('reward-circle', {
       if (!this.landed || this.opening) {
         return;
       }
+      incrWinCount();
       audioHelper.stop('audio/slow_motion.mp3');
       this.opening = true;
       audioHelper.play('audio/lootbox_open.mp3'); // length = 3900
