@@ -87,6 +87,7 @@ let rewards = [
       'https://www.youtube.com/watch?v=ULZWquS46y0&autoplay=1',      // trololo
       'https://www.youtube.com/watch?v=6E5m_XtCX3c&autoplay=1',      // ocean man
       'https://www.youtube.com/watch?v=LDU_Txk06tM&autoplay=1&t=74', // crab rave
+      'https://www.youtube.com/watch?v=2UcZWXvgMZE&autoplay=1&t=14', // freeze dance
     ],
   },
   {
