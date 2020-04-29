@@ -91,6 +91,14 @@ let rewards = [
     ],
   },
   {
+    // stonk poki butt
+    weight: 1,
+    image: 'img/stock_poki.png',
+    youtube: [
+      'https://www.youtube.com/watch?v=X53ZSxkQ3Ho&autoplay=1&t=30',  // sir bounce a lot
+    ],
+  },
+  {
     // stock got that
     weight: 1,
     youtube: 'https://www.youtube.com/watch?v=JmLHjOzwVbw&autoplay=1'
