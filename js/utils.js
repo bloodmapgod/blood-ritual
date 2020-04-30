@@ -113,3 +113,12 @@ function getWinCount() {
 function incrWinCount() {
   Cookies.set('winCount', getWinCount() + 1);
 }
+
+
+function getCompletedPrayerCount() {
+  return parseInt(Cookies.get('completedPrayerCount')) || 0;
+}
+
+function incrCompletedPrayerCount() {
+  Cookies.set('completedPrayerCount', getWinCount() + 1);
+}

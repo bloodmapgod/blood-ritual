@@ -110,6 +110,7 @@ Vue.component('prayer-circle', {
 
       this.lastUnmatchedText = matchedSomething ? null : spokenTexts[0].trim();
       if (this.isFullyMatched) {
+        incrCompletedPrayerCount();
         this.listening = false;
         annyang.abort();
         audioHelper.stop(this.backgroundAudio);

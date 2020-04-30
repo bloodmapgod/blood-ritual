@@ -213,6 +213,9 @@ let prayers = [
     completed: {
       image: 'img/pepe_gopnik.png',
       audio: 'audio/acb_hardbass.mp3'
+    },
+    valid: function () {
+      return getCompletedPrayerCount() >= 2;
     }
   },
   {
@@ -265,6 +268,9 @@ let prayers = [
     ],
     completed: {
       youtube: 'https://www.youtube.com/watch?v=9bZkp7q19f0&autoplay=1&t=71',
+    },
+    valid: function () {
+      return getCompletedPrayerCount() >= 2;
     }
   }
 ];
