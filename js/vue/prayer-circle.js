@@ -93,19 +93,32 @@ Vue.component('prayer-circle', {
       console.log(spokenTexts);
 
       let matchedSomething = false;
-      this.expectedLines.forEach((expectedLine, idx) => {
-        spokenTexts.forEach(spokenText => {
+      _.each(this.expectedLines, (expectedLine, idx) => {
+        if (expectedLine.matched) {
+          return; // continue expectedLines
+        }
+
+        let lineMatched = false;
+        _.each(spokenTexts, spokenText => {
           let normSpokenText = this.normalize(spokenText);
-          if (!expectedLine.matched) {
-            _.each(expectedLine.matchVariations, matchVariation => {
-              if (normSpokenText.includes(this.normalize(matchVariation))) {
-                this.$set(this.expectedLines[idx], 'matched', true);
-                matchedSomething = true;
-                return false; // break
-              }
-            });
+          _.each(expectedLine.matchVariations, matchVariation => {
+            if (normSpokenText.includes(this.normalize(matchVariation))) {
+              this.$set(this.expectedLines[idx], 'matched', true);
+              lineMatched = true;
+              return false; // break matchVariations
+            }
+          });
+          if (lineMatched) {
+            return false; // break spokenTexts
           }
         });
+
+        matchedSomething = matchedSomething || lineMatched;
+
+        // must be spoken line by line
+        if (!lineMatched) {
+          return false; // break expectedLines
+        }
       });
 
       this.lastUnmatchedText = matchedSomething ? null : spokenTexts[0].trim();
