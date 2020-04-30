@@ -13,8 +13,11 @@
 let rewards = [
   {
     // marbles
-    weight: 1,
-    image: 'img/hypers_250.png',
+    weight: 2,
+    image: [
+      'img/hypers_250.png',
+      'img/marbles_sir.png',
+    ],
     text: '!play',
   },
   {
@@ -164,11 +167,15 @@ function randomReward() {
   });
 
   let reward = rewards[rewardNum === null ? _.sample(indices) : rewardNum];
+
+  let processedReward = {};
   _.each(reward, (val, key) => {
     if (_.isArray(val)) {
-      reward[key] = _.sample(val);
+      processedReward[key] = _.sample(val);
+    } else {
+      processedReward[key] = val;
     }
   });
 
-  return reward; // image, text, speech, audio, youtube
+  return processedReward; // image, text, speech, audio, youtube
 }
