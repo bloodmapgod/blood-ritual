@@ -272,6 +272,23 @@ let prayers = [
     valid: function () {
       return getCompletedPrayerCount() >= 2;
     }
+  },
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'Soulja Boy off in this oh | Soulja Boy off in this old | Soulja Boy off in this hoe',
+      'Watch me crank it, watch me roll',
+      'Watch me crank dat, Soulja Boy | Watch me crank that, Soulja Boy',
+      'Then Superman dat oh | Then Superman that oh',
+      'Now watch me you',
+      '(Crank dat, Soulja Boy) | (Crank that, Soulja Boy)',
+      'Now watch me you',
+      '(Crank dat, Soulja Boy) | (Crank that, Soulja Boy)',
+    ],
+    completed: {
+      youtube: 'https://www.youtube.com/watch?v=8UFIYGkROII&autoplay=1&t=194',
+    }
   }
 ];
 
