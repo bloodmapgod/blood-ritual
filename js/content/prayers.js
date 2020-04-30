@@ -289,6 +289,21 @@ let prayers = [
     completed: {
       youtube: 'https://www.youtube.com/watch?v=8UFIYGkROII&autoplay=1&t=194',
     }
+  },
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'Everybody get ready to TWIRL....',
+      'Twirling twirling all around',
+      'Twirling twirling twirling',
+      'Twirling any way you please...',
+      'But STOP...',
+      'When I say FREEZE!',
+    ],
+    completed: {
+      youtube: 'https://www.youtube.com/watch?v=2UcZWXvgMZE&autoplay=1&t=14',
+    }
   }
 ];
 
