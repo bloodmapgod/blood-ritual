@@ -255,6 +255,17 @@ let prayers = [
     completed: {
       youtube: 'https://www.youtube.com/watch?v=tkzY_VwNIek&autoplay=1',
     }
+  },
+  {
+    // gangnam style
+    weight: 1,
+    lang: 'ko',
+    lines: [
+      '오빤 강남스타일',
+    ],
+    completed: {
+      youtube: 'https://www.youtube.com/watch?v=9bZkp7q19f0&autoplay=1&t=71',
+    }
   }
 ];
 
