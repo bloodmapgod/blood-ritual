@@ -12,10 +12,6 @@ html, body {
 }
 
 body {
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
     margin: 0;
     padding: 0;
 
@@ -662,7 +658,6 @@ body {
     padding: 3px;
     border: 3px #303030 solid;
     border-top: none;
-    user-select: text;
 }
 #dice300 {
     top: 28px;
