@@ -317,6 +317,9 @@ let prayers = [
     completed: {
       youtube: 'https://www.youtube.com/watch?v=68ugkg9RePc&autoplay=1&t=111',
       image: 'img/pepe_d.gif',
+    },
+    valid: function () {
+      return getCompletedPrayerCount() >= 1;
     }
   },
   {
