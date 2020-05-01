@@ -31,10 +31,11 @@ from the blood realm.
    - Tribute of Wisdom
 5) (Optional) Check the blood level
 6) (Optional) Address the Blood Map God / final prayers
-7) Light the candle
-8) See the stock price vision given by the Blood Map God
-9) (Conditional) Open your reward
-10) Use holy almond milk to prepare for the next ritual
+7) Draw the stock ticker if you haven't done it yet
+8) Light the candle
+9) See the stock price vision given by the Blood Map God
+10) (Conditional) Open your reward
+11) Use holy almond milk to prepare for the next ritual
 
 ### Tribute of Sacrifice
 
