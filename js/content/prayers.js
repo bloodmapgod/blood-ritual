@@ -318,6 +318,21 @@ let prayers = [
       youtube: 'https://www.youtube.com/watch?v=68ugkg9RePc&autoplay=1&t=111',
       image: 'img/pepe_d.gif',
     }
+  },
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'I\'m a Barbie girl, in a Barbie world',
+      'Life in plastic, it\'s fantastic',
+      'You can brush my hair, undress me everywhere | You can brush my hair, and dress me everywhere',
+      'Imagination, life is your creation',
+      'Come on, Barbie, let\'s go party',
+    ],
+    completed: {
+      youtube: 'https://www.youtube.com/watch?v=ZyhrYis509A&autoplay=1&t=70',
+      image: 'img/kekw_anim.gif',
+    }
   }
 ];
 
