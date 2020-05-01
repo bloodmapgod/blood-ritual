@@ -36,6 +36,7 @@ Vue.component('reward-circle', {
     audioHelper.speakStop();
     audioHelper.removeListener('masterVolumeChange', this.setVolume);
     audioHelper.stop('audio/lootbox_open.mp3');
+    this.reward && audioHelper.stop(this.reward.audio);
   },
   methods: {
     setVolume: function (masterVolume) {
