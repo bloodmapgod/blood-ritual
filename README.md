@@ -22,13 +22,13 @@ from the blood realm.
 1) Select bull or bear blood
 2) (Optional) You may draw the ticker now or before lighting the candle
 3) Recite holy chants
-  - Aurorus Chant
-  - Random Chant
+   - Aurorus Chant
+   - Random Chant
 4) Perform one of the tributes:
-  - Tribute of Sacrifice
-  - Tribute of Prayer
-  - Tribute of Journey
-  - Tribute of Wisdom
+   - Tribute of Sacrifice
+   - Tribute of Prayer
+   - Tribute of Journey
+   - Tribute of Wisdom
 5) (Optional) Check the blood level
 6) (Optional) Address the Blood Map God / final prayers
 7) Light the candle
