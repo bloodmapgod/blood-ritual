@@ -77,7 +77,8 @@ Blood level will be increase proportionally by the number of answered questions.
 
 ### Other
 
--  Close "Twitch TOS Compatible" banner clicking on it
+- Close "Twitch TOS Compatible" banner clicking on it
+- App only works on Chrome/Edge 
 
 ## Contributions
 
@@ -96,4 +97,3 @@ Content Files:
 - [Text to Speech](https://textreader.pro/) (UU RR voice)
 - [Voice Changer](https://voicechanger.io/) (use satan for blood map god)
 - [GIFs](https://gfycat.com/)
-- umm
