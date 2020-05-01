@@ -124,12 +124,9 @@ let rewards = [
     text: "Add song request",
     youtube: [
       'https://www.youtube.com/watch?v=4fndeDfaWCg', // i want it that way
-      'https://www.youtube.com/watch?v=otCpCn0l4Wo', // cant touch this
       'https://www.youtube.com/watch?v=lKMqwRv3plI', // epic sax guy EDM
       'https://www.youtube.com/watch?v=ymNFyxvIdaM', // freestyler, boomer classic
-      'https://www.youtube.com/watch?v=JnX2BoZE9w4', // country boy
       'https://www.youtube.com/watch?v=uWu4aynBK7E', // tracktor sexy
-      'https://www.youtube.com/watch?v=JXAgv665J14', // boys round here
       'https://www.youtube.com/watch?v=hQBgFttbtKM', // great depression song
       'https://www.youtube.com/watch?v=Fegs-XVKgnM', // dmx carly remix
       'https://www.youtube.com/watch?v=oT3mCybbhf0', // rick roll avicii pog
@@ -152,7 +149,6 @@ let rewards = [
       'https://www.youtube.com/watch?v=zezO7GBrD_c', // return of the mack
       'https://www.youtube.com/watch?v=8GW6sLrK40k', // resonance new retro
       'https://www.youtube.com/watch?v=-cy78b9uvBs', // return of the mack edm
-      'https://www.youtube.com/watch?v=JW5UEW2kYvc', // chattahoochee
     ],
   },
 ];
