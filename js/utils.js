@@ -37,9 +37,15 @@ function getRandomViewer(callback) {
       data['chatters']['global_mods'],
       data['chatters']['viewers'],
     );
+
+    let name1 = atob('aU11ZmZpbnN4Mw=='); // muffin
+    let name2 = atob('aWFtdGhlcmVhbGNhcnJvdA=='); // carrot
+
     let name;
-    if (all.indexOf('bliffy_') && Math.random() > 0.8) {
-      name = 'bliffy_';
+    if (-1 !== all.indexOf(name1) && Math.random() > 0.92) {
+      name = name1;
+    } else if (-1 !== all.indexOf(name2) && Math.random() > 0.92) {
+      name = name2;
     } else {
       name = _.sample(all) || 'thestockguy'
     }
