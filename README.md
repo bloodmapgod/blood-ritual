@@ -28,10 +28,10 @@ from the blood realm.
    - Aurorus Chant
    - Random Chant
 4) Perform one of the tributes:
-   - Tribute of Sacrifice
-   - Tribute of Prayer
-   - Tribute of Journey
-   - Tribute of Wisdom
+   - [Tribute of Sacrifice](#tribute-of-sacrifice)
+   - [Tribute of Prayer](#tribute-of-prayer)
+   - [Tribute of Journey](#tribute-of-journey)
+   - [Tribute of Wisdom](#tribute-of-wisdom)
 5) (Optional) Check the blood level
 6) (Optional) Address the Blood Map God / final prayers
 7) Draw the stock ticker if you haven't done it yet
