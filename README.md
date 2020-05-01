@@ -46,7 +46,9 @@ Please the Blood Map God by sending someone directly to the blood realm using a 
 Ritual performer has:
   - already picked the viewer being sacrificed (portal displays no name)
   - send a random viewer by click the thunder button
-Once the sacrifice is completed, click close (X) button
+Once the sacrifice is completed, click close (X) button.
+
+Note: randomly picked viewers may not be in the chat.
 
 ### Tribute of Prayer
 
