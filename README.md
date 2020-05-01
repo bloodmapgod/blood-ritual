@@ -75,6 +75,10 @@ You have 60 seconds to answer each question. Click the answer you think is corre
 Click continue button for the next question.
 Blood level will be increase proportionally by the number of answered questions.
 
+### Other
+
+-  Close "Twitch TOS Compatible" banner clicking on it
+
 ## Contributions
 
 To contribute content:
