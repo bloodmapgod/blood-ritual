@@ -304,6 +304,20 @@ let prayers = [
     completed: {
       youtube: 'https://www.youtube.com/watch?v=2UcZWXvgMZE&autoplay=1&t=14',
     }
+  },
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'I\'m blue da ba dee da ba daa | I\'m blue daba dee daba die | I\'m blue daba dee daba dah | I\'m blue daba dee daba da',
+      'Da ba dee da ba daa, da ba dee da ba daa, da ba dee da ba daa | double dee daba dee daba dee daba dee daba dee daba die | the ba dee daba dee daba dee daba dee daba dee daba die | double dee daba dee daba dee daba dee daba dee daba da | double dee daba dee daba dee daba dee daba dee daba die. | the ba dee daba dee daba dee daba dee daba dee daba da | double dee daba die daba dee daba dee daba dee daba die | double dee daba dee daba dee daba die daba dee daba die | double dee daba dee daba dee daba die daba dee daba da | Daba Di Daba dee daba dee daba dee daba dee daba die | double di daba di daba di daba di daba di daba die | double dee daba daba daba dee daba die daba dee daba die',
+      'I\'m blue',
+      'Da ba dee da ba daa, da ba dee da ba daa, da ba dee da ba daa | double dee daba dee daba dee daba dee daba dee daba die | the ba dee daba dee daba dee daba dee daba dee daba die | double dee daba dee daba dee daba dee daba dee daba da | double dee daba dee daba dee daba dee daba dee daba die. | the ba dee daba dee daba dee daba dee daba dee daba da | double dee daba die daba dee daba dee daba dee daba die | double dee daba dee daba dee daba die daba dee daba die | double dee daba dee daba dee daba die daba dee daba da | Daba Di Daba dee daba dee daba dee daba dee daba die | double di daba di daba di daba di daba di daba die | double dee daba daba daba dee daba die daba dee daba die',
+    ],
+    completed: {
+      youtube: 'https://www.youtube.com/watch?v=68ugkg9RePc&autoplay=1&t=111',
+      image: 'img/pepe_d.gif',
+    }
   }
 ];
 
