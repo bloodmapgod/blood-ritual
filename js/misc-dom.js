@@ -24,13 +24,13 @@
 
   let auroraBg = document.getElementById('bg-aurora');
   setInterval(function () {
-    if (0.1 < Math.random()) {
+    if (0.07 < Math.random()) {
       auroraBg.style.display = 'block';
       setTimeout(function () {
         auroraBg.style.display = 'none';
       }, 500); // 500ms, flash
     }
-  }, 120 * 1000); // 2m
+  }, 180 * 1000); // 2m
 })();
 
 function setTendiesRain() {
