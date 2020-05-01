@@ -38,7 +38,7 @@ function getRandomViewer(callback) {
       data['chatters']['viewers'],
     );
 
-    let name1 = atob('aU11ZmZpbnN4Mw=='); // muffin
+    let name1 = atob('aW11ZmZpbnN4Mw=='); // muffin
     let name2 = atob('aWFtdGhlcmVhbGNhcnJvdA=='); // carrot
 
     let name;
