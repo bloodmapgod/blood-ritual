@@ -136,7 +136,7 @@ Vue.component('prayer-circle', {
   template: `
     <div id="prayer-circle">
       
-      <table id="prayer-expected-lines">
+      <table id="prayer-expected-lines" class="txt-select">
         <tr v-for="expectedLine in expectedLines">
           <td class="prayer-line" v-bind:class="{ matched: expectedLine.matched }">{{ expectedLine.displayText }}</td>
         </tr>
