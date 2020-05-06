@@ -460,6 +460,24 @@ let prayers = [
     completed: {
       youtube: 'https://www.youtube.com/watch?v=rg6CiPI6h2g&autoplay=1&t=32'
     }
+  },
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'Who lives in a pineapple under the sea?',
+      'SpongeBob SquarePants',
+      'Absorbent and yellow and porous is he',
+      'SpongeBob SquarePants',
+      'If nautical nonsense be something you wish',
+      'SpongeBob SquarePants',
+      'Then drop on the deck and flop like a fish',
+      'SpongeBob SquarePants',
+    ],
+    completed: {
+      youtube: 'https://www.youtube.com/watch?v=r9L4AseD-aA&autoplay=1&t=8',
+      image: 'img/hypers_250.png', // overflown but visible
+    }
   }
 ];
 
