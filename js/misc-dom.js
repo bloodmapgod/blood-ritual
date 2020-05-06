@@ -47,3 +47,22 @@ function resetRain() {
     el.style.transform = null;
   });
 }
+
+const $debugButton = document.getElementById('debug-btn');
+const $debugTable  = document.getElementById('debug-table');
+const $debugPrayer = document.getElementById('debug-prayer');
+
+$debugButton.addEventListener('click', () => {
+  $debugTable.style.display = $debugTable.style.display === 'none' ? 'block' : 'none';
+});
+
+let $opts = '<option value="">-</option>';
+prayers.forEach((prayer, idx) => {
+  let title = prayer.lines[0].split('|')[0].trim().substring(0, 40);
+  $opts += '<option value="' + idx + '">' + title + '</option>'
+});
+$debugPrayer.innerHTML = $opts;
+$debugPrayer.addEventListener('input', e => {
+  let val = e.target.value;
+  prayerNum = '' === val ? null : parseInt(val);
+});

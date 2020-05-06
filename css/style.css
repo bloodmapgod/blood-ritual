@@ -685,3 +685,23 @@ body {
     transform: translateX(-50%) !important;
     bottom: 125px !important;
 }
+
+#debug-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 41px;
+    height: 41px;
+}
+
+#debug-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#debug-table {
+    position: absolute;
+    top: 0;
+    right: 41px;
+    background: white;
+    padding: 10px;
+}

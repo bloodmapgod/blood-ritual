@@ -336,6 +336,23 @@ let prayers = [
       youtube: 'https://www.youtube.com/watch?v=ZyhrYis509A&autoplay=1&t=70',
       image: 'img/kekw_anim.gif',
     }
+  },
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'I like it when the beat goes',
+      'Baby make your booty go',
+      'Baby I know you want to show',
+      'That thong thong thong thong thong',
+      'I like it when the beat goes',
+      'Baby make your booty go',
+      'Baby I know you want to show',
+      'That thong thong thong thong thong',
+    ],
+    completed: {
+      youtube: 'https://www.youtube.com/watch?v=Oai1V7kaFBk&autoplay=1&t=78'
+    }
   }
 ];
 
