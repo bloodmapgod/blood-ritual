@@ -353,6 +353,19 @@ let prayers = [
     completed: {
       youtube: 'https://www.youtube.com/watch?v=Oai1V7kaFBk&autoplay=1&t=78'
     }
+  },
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'I know when that hotline bling',
+      'That can only mean one thing',
+      'I know when that hotline bling',
+      'That can only mean one thing',
+    ],
+    completed: {
+      youtube: 'https://www.youtube.com/watch?v=uxpDa-c-4Mc&autoplay=1&t=47'
+    }
   }
 ];
 
