@@ -496,6 +496,20 @@ let prayers = [
       youtube: 'https://www.youtube.com/watch?v=KMYN4djSq7o&autoplay=1&t=0',
       image: 'img/boomer_125.png',
     }
+  },
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'Have you ever had a dream that, that, that you had, that you had to, you could, you do, you would, you want, you could do so, you do you could, you want, you wanted him to do you so much you could do anything?'
+    ],
+    valid: function () {
+      return getCompletedPrayerCount() > 2;
+    },
+    completed: {
+      youtube: 'https://www.youtube.com/watch?v=G7RgN9ijwE4&autoplay=1&t=1',
+      image: 'img/kekw_anim.gif',
+    }
   }
 ];
 
