@@ -383,6 +383,21 @@ let prayers = [
     completed: {
       youtube: 'https://www.youtube.com/watch?v=kffacxfA7G4&autoplay=1&t=44'
     }
+  },
+  {
+    weight: 1,
+    lang: 'de-DE',
+    lines: [
+      'Du',
+      'Du hast',
+      'Du hast mich',
+      'Du hast mich gefragt',
+      'Du hast mich gefragt und ich hab nichts gesagt',
+    ],
+    completed: {
+      youtube: 'https://www.youtube.com/watch?v=W3q8Od5qJio&autoplay=1&t=91',
+      image: 'img/pepe_d.gif',
+    }
   }
 ];
 
