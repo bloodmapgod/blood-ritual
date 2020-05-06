@@ -443,6 +443,23 @@ let prayers = [
     completed: {
       youtube: 'https://www.youtube.com/watch?v=JmLHjOzwVbw&autoplay=1&t=0'
     }
+  },
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'I want to be the very best',
+      'Like no one ever was',
+      'To catch them is my real test',
+      'To train them is my cause',
+      'I will travel across the land',
+      'Searching far and wide',
+      'Each Pokemon to understand',
+      'The power that\'s inside',
+    ],
+    completed: {
+      youtube: 'https://www.youtube.com/watch?v=rg6CiPI6h2g&autoplay=1&t=32'
+    }
   }
 ];
 
