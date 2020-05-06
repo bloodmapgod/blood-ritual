@@ -429,6 +429,20 @@ let prayers = [
     completed: {
       youtube: 'https://www.youtube.com/watch?v=LOM0h-6eaVY&autoplay=1&t=21'
     }
+  },
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'Like you cause you got that something',
+      'That I need in my life',
+      'That I need',
+      'So give it to me',
+      'Cause you got that'
+    ],
+    completed: {
+      youtube: 'https://www.youtube.com/watch?v=JmLHjOzwVbw&autoplay=1&t=0'
+    }
   }
 ];
 
