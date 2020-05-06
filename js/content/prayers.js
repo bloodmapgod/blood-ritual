@@ -366,6 +366,23 @@ let prayers = [
     completed: {
       youtube: 'https://www.youtube.com/watch?v=uxpDa-c-4Mc&autoplay=1&t=47'
     }
+  },
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'And I was like baby, baby, baby oh',
+      'Like baby, baby, baby no',
+      'Like baby, baby, baby oh',
+      'I thought you\'d always be mine | I thought you would always be mine',
+      'Baby, baby, baby oh',
+      'Like baby, baby, baby no',
+      'Like baby, baby, baby oh',
+      'I thought you\'d always be mine | I thought you would always be mine',
+    ],
+    completed: {
+      youtube: 'https://www.youtube.com/watch?v=kffacxfA7G4&autoplay=1&t=44'
+    }
   }
 ];
 
