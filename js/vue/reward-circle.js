@@ -83,7 +83,7 @@ Vue.component('reward-circle', {
       </div>
 
       <div v-if="reward && reward.youtube" class="reward-row">
-        <youtube v-bind:url="reward.youtube" height="300" width="570"></youtube>
+        <youtube v-bind:url="reward.youtube" height="300" width="534"></youtube>
       </div>
 
       <div v-if="reward && reward.image" class="reward-row">

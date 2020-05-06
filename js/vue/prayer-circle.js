@@ -151,7 +151,7 @@ Vue.component('prayer-circle', {
 
       <button class="btn-continue" v-if="isFullyMatched" v-on:click="$emit('completed')">Continue</button>
       
-      <youtube v-if="isFullyMatched && completedYoutube" v-bind:url="completedYoutube" height="200" width="400"></youtube>
+      <youtube v-if="isFullyMatched && completedYoutube" v-bind:url="completedYoutube" height="225" width="400"></youtube>
 
       <div id="prayer-image-container" v-if="isFullyMatched && completedImage">
         <img v-bind:src="completedImage" alt="">
