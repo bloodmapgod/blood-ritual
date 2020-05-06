@@ -478,6 +478,24 @@ let prayers = [
       youtube: 'https://www.youtube.com/watch?v=r9L4AseD-aA&autoplay=1&t=8',
       image: 'img/hypers_250.png', // overflown but visible
     }
+  },
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'Here\'s a llama There\'s a llama',
+      'And another little llama',
+      'Fuzzy Llama Funny Llama',
+      'Llama Llama duck',
+      'Llama llama Cheesecake llama',
+      'Tablet, brick, potato, llama',
+      'Llama llama mushroom llama',
+      'Llama llama duck',
+    ],
+    completed: {
+      youtube: 'https://www.youtube.com/watch?v=KMYN4djSq7o&autoplay=1&t=0',
+      image: 'img/boomer_125.png',
+    }
   }
 ];
 
