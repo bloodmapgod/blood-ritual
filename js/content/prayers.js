@@ -417,6 +417,19 @@ let prayers = [
       youtube: 'https://www.youtube.com/watch?v=vzkp10zbgMA&autoplay=1&t=86'
     }
   },
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'The snow glows white on the mountain tonight',
+      'Not a footprint to be seen',
+      'A kingdom of isolation',
+      'And it looks like I\'m the queen',
+    ],
+    completed: {
+      youtube: 'https://www.youtube.com/watch?v=LOM0h-6eaVY&autoplay=1&t=21'
+    }
+  }
 ];
 
 let prayerNum = null;
