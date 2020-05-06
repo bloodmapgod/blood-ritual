@@ -398,7 +398,25 @@ let prayers = [
       youtube: 'https://www.youtube.com/watch?v=W3q8Od5qJio&autoplay=1&t=91',
       image: 'img/pepe_d.gif',
     }
-  }
+  },
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'Deep in the night',
+      'I\'m looking for some fun',
+      'deep in the night',
+      'I\'m looking for some love',
+      'Oh, you touch my tralala',
+      'Mmm, my ding ding dong | my ding ding dong',
+      'Oh you touch my tralala',
+      'Mmm, my ding ding dong | my ding ding dong',
+      'la la la, la la la, la la la | lalala lalala lalala',
+    ],
+    completed: {
+      youtube: 'https://www.youtube.com/watch?v=vzkp10zbgMA&autoplay=1&t=86'
+    }
+  },
 ];
 
 let prayerNum = null;

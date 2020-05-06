@@ -429,6 +429,7 @@ body {
     text-align: center;
     font-size: 2em;
     background-image: url("../img/bg_stone.jpg");
+    overflow: hidden;
 }
 
 #microphone {
