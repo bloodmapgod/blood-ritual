@@ -510,6 +510,24 @@ let prayers = [
       youtube: 'https://www.youtube.com/watch?v=G7RgN9ijwE4&autoplay=1&t=1',
       image: 'img/kekw_anim.gif',
     }
+  },
+  {
+    weight: 1,
+    lang: 'en-US',
+    lines: [
+      'Uhh, feel me! | feel me',
+      'Come with me, Hail Mary',
+      'Run quick see, what do we have here now',
+      'Do you want to ride or die',
+      'La dadada, la la | Ladadada lala',
+    ],
+    valid: function () {
+      return getCompletedPrayerCount() > 1;
+    },
+    completed: {
+      youtube: 'https://www.youtube.com/watch?v=nkJA6SYwa94&autoplay=1&t=9',
+      image: 'img/bless_rng.png',
+    }
   }
 ];
 
