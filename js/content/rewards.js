@@ -80,6 +80,11 @@ let rewards = [
     image: 'img/dab.png',
   },
   {
+    weight: 1,
+    text: 'COCK',
+    image: 'img/yep.jpg',
+  },
+  {
     // annoying songs
     weight: 1,
     image: 'img/pepe_d.gif',
