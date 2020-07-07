@@ -24,21 +24,21 @@ from the blood realm.
 
 1) Select bull or bear blood
 2) (Optional) You may draw the ticker now or before lighting the candle
-3) Recite holy chants
+3) (Optional) Recite holy chants
    - Aurorus Chant
    - Random Chant
-4) Perform one of the tributes:
+4) (Optional) Perform one of the tributes:
    - [Tribute of Sacrifice](#tribute-of-sacrifice)
    - [Tribute of Prayer](#tribute-of-prayer)
    - [Tribute of Journey](#tribute-of-journey)
    - [Tribute of Wisdom](#tribute-of-wisdom)
-5) (Optional) Check the blood level
+5) (Optional) Check the blood level visually
 6) (Optional) Address the Blood Map God / final prayers
 7) Draw the stock ticker if you haven't done it yet
 8) Light the candle
 9) See the stock price vision given by the Blood Map God
 10) (Conditional) Open your reward
-11) Use holy almond milk to prepare for the next ritual
+11) Use holy almond milk to purify the ritual area and prepare for the next ritual
 
 ### Tribute of Sacrifice
 
@@ -48,14 +48,15 @@ Ritual performer has:
   - send a random viewer by click the thunder button
 Once the sacrifice is completed, click close (X) button.
 
-Note: randomly picked viewers may not be in the chat.
+Note: randomly picked viewers may not be in the chat (inactive).
 
 ### Tribute of Prayer
 
 Worship to the Blood Map God by reciting a holy prayer.
 Words must be recited correctly for the tribute to be completed.
 Click record button and recite the prayer words.
-Words in each lines must be recited all at once.
+Words in each line must be recited all at once.
+Lines can be recited separately.
 Once completed, click continue.
 
 ### Tribute of Journey
@@ -66,8 +67,8 @@ Use panorama view to figure out where you are.
 Once you know where you are, click "Show Map" button at the paronama top. This will switch to
 map view.
 In map view click to place a marker - this will be your guess.
-Once marker is place, click submit button at the bottom.
-You must within a certain for the escape to be a success.
+Once marker is placed, click submit button at the bottom.
+Your marker must be within a certain distance from the true location for the escape to be a success.
 
 ### Tribute of Wisdom
 
@@ -75,7 +76,7 @@ Prove your worthiness to the Blood Map God by demonstrating your wisdom.
 You will be given 3 questions, each of them has 1 correct answer.
 You have 60 seconds to answer each question. Click the answer you think is correct.
 Click continue button for the next question.
-Blood level will be increase proportionally by the number of answered questions.
+Blood level will be increased proportionally by the number of answered questions.
 
 ### Other
 
