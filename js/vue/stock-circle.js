@@ -84,11 +84,11 @@ Vue.component('stock-circle', {
       setTimeout(() => {
         clearInterval(this.interval);
         let success = this.setRandomPrice(true);
+        let isBear = this.color === 'red';
         this.stopped = true;
-        this.reaction = getStockReaction(this.color === 'red', success);
-        if (!success) {
-          audioHelper.play('audio/i_lost_again.mp3');
-        }
+        this.reaction = getGifReaction(isBear, success);
+        let reactionAudio = getAudioReaction(isBear, success);
+        audioHelper.play(reactionAudio);
       }, 3000);
     },
     setRandomPrice: function(finalCall = false) {

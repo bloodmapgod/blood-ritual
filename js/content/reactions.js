@@ -6,7 +6,7 @@
 // - reactions.bull.positive: image to show on success bull rituals
 // - reactions.bull.negative: image to show on failed bull rituals
 
-let reactions = {
+let gifReactions = {
   generic: {
     positive: [
       "https://thumbs.gfycat.com/GoodShadyGalapagosalbatross-mobile.mp4", // pogchamp
@@ -70,9 +70,62 @@ let reactions = {
   },
 };
 
-function getStockReaction(bear, positive) {
-  let buckets = [reactions.generic];
-  buckets.push(bear ? reactions.bear : reactions.bull);
+let audioReactions = {
+  generic: {
+    positive: [
+      'audio/im_gonna_be_rich.mp3',
+      'audio/im_a_millionaire.mp3',
+      'audio/wheres_my_lambo.mp3',
+      'audio/im_rich.mp3',
+      'audio/up_now_bitch.mp3',
+    ],
+    negative: [
+      'audio/i_lost_again.mp3',
+      'audio/never_financially_recover.mp3',
+      'audio/i_feel_dead.mp3',
+      'audio/i_dont_feel_so_good.mp3',
+      'audio/i_got_nothing_in_my_bank_account.mp3',
+      'audio/its_rigged.mp3',
+      'audio/why_am_i_losing_money.mp3',
+      'audio/i_just_stay_broke.mp3',
+      'audio/we_all_have_depression.mp3',
+      'audio/i_lost_all_my_money.mp3',
+    ],
+  },
+  bear: {
+    positive: [
+      'audio/its_coming_back_down.mp3',
+      'audio/crash_coming.mp3',
+    ],
+    negative: [],
+  },
+  bull: {
+    positive: [
+      'audio/moon1.mp3',
+      'audio/moon2.mp3',
+      'audio/moon3.mp3',
+      'audio/moon4.mp3',
+    ],
+    negative: [
+      'audio/its_a_recession.mp3',
+      'audio/just_a_dip.mp3',
+    ],
+  },
+};
+
+function getGifReaction(bear, positive) {
+  let buckets = [gifReactions.generic];
+  buckets.push(bear ? gifReactions.bear : gifReactions.bull);
+
+  let items = positive ? buckets[0].positive.concat(buckets[1].positive)
+                       : buckets[0].negative.concat(buckets[1].negative);
+
+  return _.sample(items);
+}
+
+function getAudioReaction(bear, positive) {
+  let buckets = [audioReactions.generic];
+  buckets.push(bear ? audioReactions.bear : audioReactions.bull);
 
   let items = positive ? buckets[0].positive.concat(buckets[1].positive)
                        : buckets[0].negative.concat(buckets[1].negative);
