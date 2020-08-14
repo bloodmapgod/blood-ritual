@@ -57,6 +57,12 @@ let rewards = [
     ],
   },
   {
+    // fart
+    weight: 1,
+    image: 'img/monkahmm_250.png',
+    audio: 'audio/fart.mp3',
+  },
+  {
     // chat goes ham
     weight: 1,
     image: 'img/kekw_anim.gif',
