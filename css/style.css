@@ -660,18 +660,18 @@ body {
 #dice300, #contribute {
     position: absolute;
     background-color: #dcdcdc;
-    font-size: 1.1em;
+    font-size: 1.4em;
     padding: 3px;
     border: 3px #303030 solid;
     border-top: none;
 }
 #dice300 {
-    top: 28px;
+    top: 45px;
     left: 0;
 }
 
 #contribute {
-    top: 0;
+    top: 10px;
     left: 0;
 }
 
