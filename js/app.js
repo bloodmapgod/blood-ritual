@@ -58,16 +58,16 @@ let app = new Vue({
     bloodLevel: function () {
       let tributePoints = 0;
       if ('trivia' === this.tribute) {
-        tributePoints = Math.round(this.triviaAnsweredRatio * 25);
+        tributePoints = Math.round(this.triviaAnsweredRatio * 40);
       } else if (this.tribute) {
-        tributePoints = 15;
+        tributePoints = 25; // sacrifice, journey, prayer
       }
 
       return (this.color ? 15 : 0) // 15
            + (this.trace.length ? 20 : 0) // 35
            + (this.acbChantActive > 0 ? 5 : 0) // 40
            + (this.randomChantActive > 0 ? 5 : 0) // 45
-           + tributePoints; // 60 - 70
+           + tributePoints; // 70 - 85
     },
     bloodOrbTitle: function () {
       return 'Sanguis ' + romanize(this.bloodLevel)
