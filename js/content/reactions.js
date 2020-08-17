@@ -27,6 +27,7 @@ let gifReactions = {
       "https://thumbs.gfycat.com/PinkPastelIlsamochadegu-mobile.mp4", // kevin hart sad
       "https://thumbs.gfycat.com/OddLightheartedKiskadee-mobile.mp4", // kid cry
       "https://thumbs.gfycat.com/MatureFlickeringGypsymoth-mobile.mp4", // kramer shame
+      "https://media.tenor.com/videos/ef92c87f88b61bb95d1989aeb28d8baa/mp4", // kramer mad
     ],
   },
   bear: {
@@ -44,6 +45,7 @@ let gifReactions = {
       "https://media.tenor.com/videos/52b68d62a87d7104b62f6b8902fd2758/mp4", // bear dance
       "https://media.tenor.com/videos/0e69563bd657f5cbc0ba9a747724e37b/mp4", // bear guitar
       "https://media.tenor.com/videos/0297ff556b70bccd25f2618c2bdf5554/mp4", // bear kung fu
+      "https://media.tenor.com/videos/858dfd2a1f1b9a0c07a0c349e2e45666/mp4", // kramer sell
     ],
     negative: [
       "https://thumbs.gfycat.com/FriendlyUnacceptableKingbird-mobile.mp4", // bear skunk
@@ -61,6 +63,7 @@ let gifReactions = {
       "https://thumbs.gfycat.com/LegitimateObviousDuckling-mobile.mp4", // rocket
       "https://media1.tenor.com/images/510df6a05c4e51a8a0efed7dd54a0ff5/tenor.gif", // bull scare jump
       "https://media1.giphy.com/media/ql0E9jsmyb9GE/giphy.gif", // bull pamplona scare
+      "https://media.tenor.com/videos/a79106924856048c1e385b6b71e8fc77/mp4", // kramer buy
     ],
     negative: [
       "https://thumbs.gfycat.com/ConventionalWhoppingEmperorpenguin-mobile.mp4", // bear attack
