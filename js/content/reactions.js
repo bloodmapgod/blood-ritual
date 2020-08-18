@@ -28,6 +28,7 @@ let gifReactions = {
       "https://thumbs.gfycat.com/OddLightheartedKiskadee-mobile.mp4", // kid cry
       "https://thumbs.gfycat.com/MatureFlickeringGypsymoth-mobile.mp4", // kramer shame
       "https://media.tenor.com/videos/ef92c87f88b61bb95d1989aeb28d8baa/mp4", // kramer mad
+      "https://thumbs.gfycat.com/SerpentineCraftyAnt-mobile.mp4", // tiger king financially recover
     ],
   },
   bear: {
