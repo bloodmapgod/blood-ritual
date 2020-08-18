@@ -79,7 +79,7 @@ Vue.component('stock-circle', {
   `,
   methods: {
     setCurrentPrice: function (currentPrice) {
-      this.currentPrice = currentPrice.toFixed(2);
+      this.currentPrice = parseFloat(currentPrice.toFixed(2));
       this.interval = setInterval(this.setRandomPrice, 50);
       setTimeout(() => {
         clearInterval(this.interval);
@@ -106,7 +106,7 @@ Vue.component('stock-circle', {
       }
 
       let randomPrice = this.currentPrice * (1 + (sign * randomChangeRatio));
-      this.futurePrice = randomPrice.toFixed(2);
+      this.futurePrice = parseFloat(randomPrice.toFixed(2));
 
       return desiredSign === sign;
     },
