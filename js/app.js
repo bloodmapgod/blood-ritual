@@ -25,6 +25,9 @@ let app = new Vue({
 
   },
   computed: {
+    hasAnnyang: function () {
+      return !!window.annyang;
+    },
     isStartMode: function() {
       return 'start' === this.mode;
     },

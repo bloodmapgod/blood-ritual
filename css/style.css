@@ -224,6 +224,11 @@ body {
     background-image: url("../img/bg_hydra.png");
 }
 
+#btn-trivia.topright {
+    top: 75px;
+    left: 740px;
+}
+
 #btn-trivia:hover, #btn-trivia.active {
     box-shadow: 0 0 5px 5px #8300ff;
 }

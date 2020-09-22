@@ -28,12 +28,6 @@
 </head>
 
 <body>
-<script>
-  if (null === annyang) {
-    document.body.parentElement.innerHTML = `<html><body><div>Your browser does not support <a href="https://caniuse.com/#feat=speech-recognition">Speech Recognition API</a>.</div></body></html>`;
-  }
-</script>
-
 <div id="dice300">Made by dice3000 <img src="img/ez_small.png" class="inline-image" alt=""></div>
 <div id="contribute">Contribute @ <a href="https://github.com/bloodmapgod/blood-ritual" target="_blank">github.com/bloodmapgod</a></div>
 <div id="debug-btn" title="Debug Prayers"></div>
@@ -76,8 +70,8 @@
     <div id="btn-random-chant" v-on:click="chantRandom()" class="btn-round" v-bind:class="{ active: randomChantActive }" title="Random Chant"></div>
 
     <div id="btn-sacrifice" v-on:click="enterTribute('sacrifice')" class="btn-round"  v-bind:class="{ active: isTribute('sacrifice') }" title="Tribute of Sacrifice"></div>
-    <div id="btn-prayer" v-on:click="enterTribute('prayer')" class="btn-round" v-bind:class="{ active: isTribute('prayer') }" title="Tribute of Prayer"></div>
-    <div id="btn-trivia" v-on:click="enterTribute('trivia')" class="btn-round" v-bind:class="{ active: isTribute('trivia') }" title="Tribute of Wisdom"></div>
+    <div v-if="hasAnnyang" id="btn-prayer" v-on:click="enterTribute('prayer')" class="btn-round" v-bind:class="{ active: isTribute('prayer') }" title="Tribute of Prayer"></div>
+    <div id="btn-trivia" v-on:click="enterTribute('trivia')" class="btn-round" v-bind:class="{ active: isTribute('trivia'), topright: !hasAnnyang }" title="Tribute of Wisdom"></div>
     <div id="btn-journey" v-on:click="enterTribute('journey')" class="btn-round" v-bind:class="{ active: isTribute('journey') }" title="Tribute of Journey"></div>
 
     <div id="blood-orb" class="btn-round" v-bind:title="bloodOrbTitle" v-bind:class="{ active: bloodLevel > 0 }">
